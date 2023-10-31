@@ -22,7 +22,6 @@ int main()
 
     stringstream words(line);
     int ekAurVar;
-    int k = 0;
 
     while (words >> ekAurVar)
     {
@@ -31,6 +30,8 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
+        bool swap = false;
+
         for (int j = 0; j < n - i - 1; j++)
         {
             if (sortThis[j] > sortThis[j + 1])
@@ -38,7 +39,13 @@ int main()
                 int temp = sortThis[j];
                 sortThis[j] = sortThis[j + 1];
                 sortThis[j + 1] = temp;
+                swap = true;
             }
+        }
+
+        if (!swap) // helps achieve best case scenario; breaks when sorted
+        {
+            break;
         }
     }
 

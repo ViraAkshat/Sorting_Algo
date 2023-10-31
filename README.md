@@ -9,3 +9,10 @@ Time complexity:
 
 - O(N^2) for worst case
 - O(N) for best case
+
+## Selection Sort
+
+Find the minimum element in the unsorted region of array, swap it with the first element in unsorted array, repeat
+Time complexity
+
+- O(N^2)

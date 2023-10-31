@@ -23,3 +23,10 @@ Check if the current element and the previously scanned part of array is sorted 
 Time complexity
 
 - O(N^2)
+
+## Merge Sort
+
+Divide the array into smaller segments until you reach single unit. Now, merge the divided array in sorted form. Select the divided half arrays, compare each element and keep adding the next smaller number to a temp array. Finally, change the original array, recursively
+Time Complexity
+
+- O(NlogN)

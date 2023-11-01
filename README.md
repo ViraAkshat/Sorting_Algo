@@ -30,3 +30,12 @@ Divide the array into smaller segments until you reach single unit. Now, merge t
 Time Complexity
 
 - O(NlogN)
+  N for sorting at each step and a total of log2(N) (halving the array at every step recursively)
+
+## Quick Sort
+
+Fix a pivot (for example, the 1st element of the unsorted region of array). Set low and high pointers, compare and shift the pivot to its designated position. Recursively sort the unsorted array on left and right of the pivot.
+Time complexity
+
+- O(NlogN)
+  N for sorting at each step and a total of logN steps (dividing the array in 2 unsorted arrays recursively)

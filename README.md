@@ -1,6 +1,32 @@
 # Sorting_Algo
 
-This repo contains all the different types of sorting algorithm
+This repo contains all the different types of sorting algorithm. The sorting algorithms can be classified using various factors. Such classifications can be used to decide which algorithm suits best for a particular application.
+These algorithms can be sorted on the basis of
+
+1. Time Complexity
+
+- Comparison Based
+  - O(n^2): Bubble, selection, insertion
+  - O(nlogn): Merge, quick, heap, tim
+- Non-Comparison Based
+  - O(linear): count, radix, bucket
+
+2. Space Complexity
+
+- In-place: bubble, selection, insertion, quick, heap
+- Out of place: merge, time, count, radix, bucket
+
+3. Stability
+   Preserves order of 'nodes' with same key value
+
+- Stable: Merge, tim, bubble*, insertion*
+- Unstable: quick, selection, heap
+
+4. Adaptivity
+   Take advantage of existing order of input data
+
+- Adaptive: Insertion
+- Non-adaptive: merge, quick, heap, selection
 
 ## Bubble Sort
 

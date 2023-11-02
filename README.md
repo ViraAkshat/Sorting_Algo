@@ -80,3 +80,17 @@ Time Complexity
 Space Complexity
 
 - O(N+k)
+
+## Radix Sort
+
+It is based on count sort and solves the problem when the range of array elements is too wide. First, find the maximum element. Then for each digit starting from the units place, sort all the numbers using count sort (based on their units digit). Repeat the sorting using the next decimal places to get the sorted array.
+
+Should be used when the range is too wide and the number of digits isn't very high.
+
+Time Complexity
+
+- O(N\*D) where D is the number of digits in the max element
+
+Space Complexity
+
+- O(N)

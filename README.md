@@ -94,3 +94,16 @@ Time Complexity
 Space Complexity
 
 - O(N)
+
+## Bucket Sort
+
+Scatter and gather approach. Normalize the elements to fit into range, take the floor of each to get the index and append the number to that index. Sort the individual buckets. Gather all buckets to get sorted array.
+
+Used when elements have a **uniform** distribution within a certain range.
+Can be used for floating point numbers
+
+Time Complexity
+
+- O(N) best case
+- O(N+k) average case (max k elements in a bucket)
+- O(N^2) worst case; all/max elements in a single bucket

@@ -39,3 +39,18 @@ Time complexity
 
 - O(NlogN)
   N for sorting at each step and a total of logN steps (dividing the array in 2 unsorted arrays recursively)
+
+## Counting Sort
+
+Find the max element. Make a frequency array of size max element + 1. Its value denotes the frequency of its index in the original array. Now, calculate the cumulative frequency array. Then, traverse the original array in reverse fashion, for every data point, decrement the frequency by 1 and place the number at that location (corresponding to the new cumulative frequency). Repeat to get the sorted array.
+
+Useful when the array has repeated (integer) elements, within a short comparable range.
+For negative numbers, the array can be normalized for count sort (subtract the minimum number from every element and implement count sort as it is).
+
+Time Complexity
+
+- O(N+k); k is max element
+
+Space Complexity
+
+- O(N+k)
